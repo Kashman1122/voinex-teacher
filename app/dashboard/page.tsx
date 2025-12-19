@@ -10,6 +10,7 @@ import { StudentsList } from "@/components/students-list"
 import { fetchTeacherCompleteData, type TeacherCompleteData } from "@/lib/api-client"
 import { AlertCircle, Loader2 } from "lucide-react"
 import { Card } from "@/components/ui/card"
+// import { APIUsagePieChart } from "@/components/Chart/lineChart"
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -152,12 +153,12 @@ export default function DashboardPage() {
               </p>
             </Card>
 
-            <Card className="bg-card border p-4 sm:p-6 rounded-xl text-center">
+            {/* <Card className="bg-card border p-4 sm:p-6 rounded-xl text-center">
               <p className="text-muted-foreground text-xs sm:text-sm mb-2">API Hits</p>
               <p className="text-2xl sm:text-3xl font-bold text-primary">
                 {dashboardData.summary.total_api_hits}
               </p>
-            </Card>
+            </Card> */}
 
             <Card className="bg-card border p-4 sm:p-6 rounded-xl text-center">
               <p className="text-muted-foreground text-xs sm:text-sm mb-2">Projects</p>
@@ -175,7 +176,7 @@ export default function DashboardPage() {
           </div>
 
           {/* Detailed API Breakdown */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-4">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-4">
             <Card className="bg-blue-500/10 border border-blue-500/30 p-4 rounded-xl">
               <p className="text-xs text-muted-foreground mb-1">Damini AI Usage</p>
               <p className="text-2xl font-bold text-blue-600">
@@ -195,7 +196,8 @@ export default function DashboardPage() {
                 ({dashboardData.api_usage.project_builder_usage?.percentage || 0}% of total)
               </p>
             </Card>
-          </div>
+          </div> */}
+          {/* <APIUsagePieChart dashboardData={dashboardData}/> */}
         </div>
 
         {/* Students List */}
