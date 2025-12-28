@@ -51,7 +51,7 @@
     "input-otp": "1.4.1",
     "jsonwebtoken": "^9.0.3",
     "kerberos": "latest",
-    "lucide-react": "^0.454.0",
+    "lucide-react": "^0.562.0",
     "mongodb": "^7.0.0",
     "mongodb-client-encryption": "latest",
     "next": "16.0.7",
