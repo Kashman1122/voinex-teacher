@@ -125,13 +125,13 @@ export default function DashboardPage() {
           <SubscriptionCard subscription={dashboardData.subscription} />
         </div>
 
-        {/* API Usage */}
-        <APIUsageCard usage={dashboardData.api_usage} />
+        {/* API Usage
+        <APIUsageCard usage={dashboardData.api_usage} /> */}
 
         {/* Summary Stats */}
         <div>
           <h2 className="text-xl sm:text-2xl font-bold mb-4">Summary</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
             <Card className="bg-card border p-4 sm:p-6 rounded-xl text-center">
               <p className="text-muted-foreground text-xs sm:text-sm mb-2">Total Students</p>
               <p className="text-2xl sm:text-3xl font-bold text-primary">
