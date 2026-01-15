@@ -120,9 +120,13 @@ export default function RegisterPage() {
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-            <div className="w-8 h-8 border-2 border-primary-foreground border-r-transparent rounded-full transform -rotate-45" />
-          </div>
+          <img
+            src="https://www.voinex.in/static/vizcureot_real.png"
+            alt="Logo"
+            width={120}
+            height={48}
+            className="object-contain"
+          />
         </div>
 
         <Card className="border-border shadow-lg">
