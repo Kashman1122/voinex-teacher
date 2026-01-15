@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "https://www.voinex.in/static/vizcureot_real.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "https://www.voinex.in/static/vizcureot_real.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
