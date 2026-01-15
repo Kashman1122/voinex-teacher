@@ -1,13 +1,14 @@
 "use client"
 
 import { Card } from "@/components/ui/card"
-import { Mail, Code, Building2 } from "lucide-react"
+import { Mail, Code, Building2, Key } from "lucide-react"
 
 interface TeacherInfoCardProps {
   teacher: {
     name: string
     email: string
     teacher_code: string
+    invitation_code: string
     institution: string
   }
 }
@@ -40,6 +41,14 @@ export function TeacherInfoCard({ teacher }: TeacherInfoCardProps) {
             <div className="min-w-0">
               <p className="text-xs text-muted-foreground">Teacher Code</p>
               <p className="text-sm font-medium text-foreground font-mono">{teacher.teacher_code}</p>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Key size={16} className="text-primary flex-shrink-0" />
+            <div className="min-w-0">
+              <p className="text-xs text-muted-foreground">Invitation Code</p>
+              <p className="text-sm font-medium text-foreground font-mono">{teacher.invitation_code}</p>
             </div>
           </div>
 
