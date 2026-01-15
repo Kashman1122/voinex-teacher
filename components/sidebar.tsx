@@ -126,7 +126,7 @@ export function Sidebar({ onClose }: SidebarProps) {
         {[
           { icon: LayoutDashboard, label: "Dashboard", href: "/" },
           { icon: Users, label: "Subscriptions", href: "/subscriptions" },
-          { icon: Settings, label: "Settings", href: "/settings" },
+          // { icon: Settings, label: "Settings", href: "/settings" },
         ].map(({ icon: Icon, label, href }) => (
           <Link
             key={href}

@@ -57,14 +57,14 @@ export function Header({ onMenuClick }: HeaderProps) {
       </button>
 
       <div className="flex-1 flex items-center gap-2 sm:gap-4 ml-2 lg:ml-0">
-        <div className="relative max-w-md hidden sm:block w-full">
+        {/* <div className="relative max-w-md hidden sm:block w-full">
           <Search size={18} className="absolute left-3 top-2.5 text-muted-foreground" />
           <input
             type="text"
             placeholder="Search..."
             className="w-full bg-input border border-border rounded-lg pl-10 pr-4 py-2 text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm"
           />
-        </div>
+        </div> */}
       </div>
 
       <div className="flex items-center gap-2 sm:gap-4">
@@ -79,12 +79,12 @@ export function Header({ onMenuClick }: HeaderProps) {
             <Moon size={18} className="sm:w-5 sm:h-5" />
           )}
         </button>
-        <button className="p-2 hover:bg-input rounded-lg transition-colors text-muted-foreground hover:text-foreground">
+        {/* <button className="p-2 hover:bg-input rounded-lg transition-colors text-muted-foreground hover:text-foreground">
           <Bell size={18} className="sm:w-5 sm:h-5" />
         </button>
         <button className="p-2 hover:bg-input rounded-lg transition-colors text-muted-foreground hover:text-foreground">
           <User size={18} className="sm:w-5 sm:h-5" />
-        </button>
+        </button> */}
       </div>
     </header>
   )
