@@ -260,52 +260,6 @@ export function SubscriptionManagement() {
               </div>
             </div>
           </Card>
-
-          {/* Billing History */}
-          <Card className="bg-card border border-border p-6 rounded-xl">
-            <h3 className="text-lg font-bold text-foreground mb-4">Billing History</h3>
-            {billing_history && billing_history.length > 0 ? (
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead className="bg-input border-b border-border">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-muted-foreground">Invoice</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-muted-foreground">Date</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-muted-foreground">Amount</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-muted-foreground">Method</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-muted-foreground">Status</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-muted-foreground">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {billing_history.map((invoice: any) => (
-                      <tr key={invoice.id} className="border-b border-border hover:bg-input/50">
-                        <td className="px-4 py-3 text-sm font-medium text-foreground">{invoice.invoice_number}</td>
-                        <td className="px-4 py-3 text-sm text-muted-foreground">{new Date(invoice.date).toLocaleDateString()}</td>
-                        <td className="px-4 py-3 text-sm font-semibold text-foreground">
-                          {invoice.currency === 'USD' ? `$${invoice.amount_usd.toFixed(2)}` : `₹${invoice.amount_inr.toFixed(2)}`}
-                        </td>
-                        <td className="px-4 py-3 text-sm text-muted-foreground">{invoice.payment_method}</td>
-                        <td className="px-4 py-3">
-                          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400">Paid</span>
-                        </td>
-                        <td className="px-4 py-3">
-                          <button className="text-primary hover:underline font-semibold flex items-center gap-1 text-sm">
-                            <Download size={14} />
-                            Download
-                          </button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ) : (
-              <div className="text-center py-8 text-muted-foreground">
-                <p>No billing history available</p>
-              </div>
-            )}
-          </Card>
         </div>
 
         {/* Right Sidebar */}
